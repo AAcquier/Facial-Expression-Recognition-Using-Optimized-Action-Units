@@ -1,0 +1,8 @@
+
+button {font-size:10px; margin:10px; float: none;
+        display: inline-block;
+        position: relative;
+        left: 0;
+        right: 0;}
+
+.crosshair {cursor: crosshair;}

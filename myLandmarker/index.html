@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+		
+        <title>myLandmarker</title>
+		<link rel="stylesheet" type="text/css" href="css/landmarker.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/landmarker.js"></script>
+	</head>
+	<body >
+		<header>
+			<h1> myLandmarker</h1>
+		</header>
+		<input id="getPicture" type="file" accept="image/*" capture /><br><br>
+		<canvas id = "canvas" height='640' width='480' class="crosshair"></canvas><br><br>
+		<center><button class="zoomout">Zoom Out</button> <button class="zoomin">Zoom In</button>
+		<button class="landmark" > Add a Landmark</button><button class="removeLdmk"> Remove a landmark</button>
+		<input type="Button" value="Create File" id="download"></center><br><br>
+		<center><p id = "ldmkDone"></p></center>
+	</body>
+</html>
