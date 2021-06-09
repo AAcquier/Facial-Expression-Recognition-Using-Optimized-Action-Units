@@ -1,17 +1,16 @@
 
 
-def au1(kpts1, kpts2, kpts6, kpts7, fil4):      #MOD2
+def au1(kpts1, kpts2, kpts6, kpts7, fil4):   
 
     au1 = 0
-
-    #if ((kpts1 < -0.09 and kpts2 > 0.23) or (kpts1 < -0.09 and kpts2 > 1)) or (kpts6 < -0.13 and kpts7 > 0.01) or fil4 > 0.11:
+    
     if (kpts1 < -0.09 and kpts2 > 0.23) or (kpts6 < -0.13 and kpts7 > 0) or fil4 > 0.07:
         au1 = "a1"             # M1, M4 and M22
 
     return au1
 
 
-def au2(kpts3, kpts4):          #MOD2
+def au2(kpts3, kpts4):        
 
     au2 = 0
 
@@ -21,11 +20,10 @@ def au2(kpts3, kpts4):          #MOD2
     return au2
 
 
-def au4(kpts1, kpts2, kpts6, kpts7, kpts5, fil5):       #MOD2
+def au4(kpts1, kpts2, kpts6, kpts7, kpts5, fil5):    
     au4 = 0
 
     if ((kpts1 < -0.09 and kpts2 > 0.33) or (kpts6 < -0.68 and kpts7 < -0.02)) and (kpts5 < -0.22 or fil5 > 0.01):
-    #if ((kpts1 < -0.1 and kpts2 < -0.1) or (kpts6 < -0.1 and kpts7 < -0.1)) and (kpts5 < -0.1 or fil5 > 0.15):
 
         au4 = "a4"  # M1, M4, M3 and M23_1
 
@@ -37,13 +35,12 @@ def au5(kpts8, kpts9, kpts10):
     au5 = 0
 
     if (kpts8 < 0 and kpts9 < 0) and kpts10 > 0:
-    #if (kpts8 > 0.12 and kpts9 > 0.12) and kpts10 > 0.1:
         au5 = "a5"  #M5, M6
 
     return au5
 
 
-def au6(kpts7, kpts8, kpts12, fil1, fil2, fil3):                                    #MOD2
+def au6(kpts7, kpts8, kpts12, fil1, fil2, fil3):                                    
     #AU NOT IN THE ORIGINAL PAPER EXTRAPOLATED FROM TABLE 4 MEASUREMENT FOR HAPPY
     au6 = 0
 
@@ -53,7 +50,7 @@ def au6(kpts7, kpts8, kpts12, fil1, fil2, fil3):                                
     return au6
 
 
-def au7(kpts7, kpts8, kpts9):           #MOD2
+def au7(kpts7, kpts8, kpts9):         
 
     au7 = 0
 
@@ -63,7 +60,7 @@ def au7(kpts7, kpts8, kpts9):           #MOD2
     return au7
 
 
-def au9(fil6, fil7, fil8, fil9, fil10, fil11, fil12, kpts5, kpts6, fil5, kpts4, kpts10, kpts11):        #MOD2
+def au9(fil6, fil7, fil8, fil9, fil10, fil11, fil12, kpts5, kpts6, fil5, kpts4, kpts10, kpts11):        
     NW1 = 0
     NW2 = 0
 
@@ -116,7 +113,7 @@ def au9(fil6, fil7, fil8, fil9, fil10, fil11, fil12, kpts5, kpts6, fil5, kpts4, 
     return au9
 
 
-def au12(kpts13, kpts14, kpts19, kpts20, kpts18):           #MOD2
+def au12(kpts13, kpts14, kpts19, kpts20, kpts18):           
     au12 = 0
 
     if kpts13 < -0.01 and kpts14 < 0 and (kpts19 < -0.01 and kpts20 < -0.01) and kpts18 < -0.01:
@@ -125,7 +122,7 @@ def au12(kpts13, kpts14, kpts19, kpts20, kpts18):           #MOD2
     return au12
 
 
-def au15(kpts16, kpts14, kpts21, kpts22, kpts23):                   #MOD2
+def au15(kpts16, kpts14, kpts21, kpts22, kpts23):                 
     au15 = 0
     if kpts16 < 0 and kpts14 < -4 and (kpts21 < -0.21 and kpts22 < -0.31) and kpts23 < -0.16:
 
@@ -134,7 +131,7 @@ def au15(kpts16, kpts14, kpts21, kpts22, kpts23):                   #MOD2
     return au15
 
 
-def au16(fil1, fil2, fil3):                                 #MOD2
+def au16(fil1, fil2, fil3):                                
     # AU NOT IN THE ORIGINAL PAPER EXTRAPOLATED FROM TABLE 4 MEASUREMENT FOR DISGUST
     au16 =0
     cl = 0
@@ -154,7 +151,7 @@ def au16(fil1, fil2, fil3):                                 #MOD2
     return au16
 
 
-def au20(kpts15):                                           #MOD2
+def au20(kpts15):                                           
     # AU NOT IN THE ORIGINAL PAPER EXTRAPOLATED MYSELF
     au20 = 0
 
@@ -174,7 +171,7 @@ def au23(kpts26, kpts27, kpts28):
     return au23
 
 
-def au26(kpts17, kpts25, kpts24):                   #MOD
+def au26(kpts17, kpts25, kpts24):                
     au26 = 0
 
     if kpts17 < 0 and kpts25 < -0.39 and kpts24 < -0.17:
